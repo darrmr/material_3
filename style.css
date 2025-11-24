@@ -1,0 +1,25 @@
+#main-point {
+    background: #FF6B6B;
+    color: white;
+    padding: 2px 6px;
+}
+
+#deadline {
+    border: 2px solid #4ECDC4;
+    padding: 1px 4px;
+}
+
+.item {
+    padding: 4px;
+    background: #4ECDC4;
+}
+
+#must-do {
+    background: #FFEAA7;
+    border-left: 3px solid #FDCB6E;
+}
+
+#optional {
+    background: #DFE6E9;
+    color: #636E72;
+}
