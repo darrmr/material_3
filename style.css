@@ -23,3 +23,17 @@
     background: #DFE6E9;
     color: #636E72;
 }
+
+.text {
+  color: #ffffff;
+  line-height: 1.4;
+}
+
+.wrapper .text {
+  color: #000000;
+}
+
+.wrapper  {
+  color: #000000;
+}
+
