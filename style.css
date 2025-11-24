@@ -24,16 +24,36 @@
     color: #636E72;
 }
 
-.text {
-  color: #ffffff;
+.product-card {
+  border: 1px solid #DFE6E9;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  color: #2D3436;
+  margin-bottom: 12px;
+}
+
+.product-card .details p {
+  color: #636E72;
   line-height: 1.4;
 }
 
-.wrapper .text {
-  color: #000000;
+.product-card .details p span {
+  background: #FFEAA7;
+  padding: 2px 6px;
+  border-radius: 3px;
 }
 
-.wrapper  {
-  color: #000000;
+.product-card .price-info .price {
+  color: #00B894;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
+.product-card .price-info .old-price {
+  color: #636E72;
+  text-decoration: line-through;
+  margin-left: 8px;
+}
