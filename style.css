@@ -57,3 +57,34 @@
   text-decoration: line-through;
   margin-left: 8px;
 }
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/* Сделает зеленым ВСЕ внутри product-info */
+
+.product-info > * { color: green; }
+
+blockquote[cite] {
+  background-color: #2E9AFF;
+}
+
+article h3  {
+  font-weight: bold;
+}
+
+.star:hover ~ .star {
+  color: red;
+}
+
+label + input {
+  color: red;
+}
+
+article > h3 {
+  color: red
+}
+
