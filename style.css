@@ -7,7 +7,7 @@
 
 .first {
   background: #FF6B6B;
-  top: 50px;
+  top: 150px;
   left: 50px;
   z-index: 1;
 }
@@ -18,3 +18,34 @@
   left: 100px;  
 }
 
+
+@import url("header.css");
+@import url("navbar.css");
+@import url("footer.css");
+@import url("grid.css");
+
+h1 {
+  color: #6e4aff;
+  border: 1px solid currentColor;
+}
+
+h1:hover {
+  color: #09ff00;
+}
+
+.incoming::before {
+  content: "Привет, ";
+}
+
+.incoming::after {
+  content: ", ты отлично выглядишь!";
+}
+
+.text::first-line {
+  background-color: #F498AD;
+}
+
+
+::selection {
+  background-color: #98f4ba;
+}
