@@ -1,90 +1,79 @@
-#main-point {
-    background: #FF6B6B;
-    color: white;
-    padding: 2px 6px;
+.btn {
+  background-color: #374151;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-#deadline {
-    border: 2px solid #4ECDC4;
-    padding: 1px 4px;
+.btn:hover {
+  background-color: #4B5563;
+  transform: scale(1.05);
 }
 
-.item {
-    padding: 4px;
-    background: #4ECDC4;
+.btn-primary:hover {
+  background-color: #1E40AF;
 }
 
-#must-do {
-    background: #FFEAA7;
-    border-left: 3px solid #FDCB6E;
+.btn-danger:hover {
+  background-color: #DC2626;
 }
 
-#optional {
-    background: #DFE6E9;
-    color: #636E72;
+:focus {
+  color: lightblue;
 }
 
-.product-card {
-  border: 1px solid #DFE6E9;
-  padding: 16px;
-  border-radius: 8px;
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: lightblue;
 }
 
-.product-card h3 {
-  color: #2D3436;
-  margin-bottom: 12px;
+:is(h1, h2, h3, h4, h5, h6) a {
+  color: lightblue;
 }
 
-.product-card .details p {
-  color: #636E72;
-  line-height: 1.4;
+
+.player:fullscreen .player__controls {
+  display: none;
 }
 
-.product-card .details p span {
-  background: #FFEAA7;
-  padding: 2px 6px;
-  border-radius: 3px;
+
+:lang(en) {
+  border-left-color: #3B82F6;
+  background-color: #EFF6FF;
+  quotes: "“" "”" "‘" "’";
 }
 
-.product-card .price-info .price {
-  color: #00B894;
-  font-size: 1.2em;
-  font-weight: bold;
+:lang(ru) {
+  border-left-color: #8B5CF6;
+  background-color: #F5F3FF;
+  quotes: "«" "»";
 }
 
-.product-card .price-info .old-price {
-  color: #636E72;
-  text-decoration: line-through;
-  margin-left: 8px;
+/* Переопределит цвет */
+:root {
+  --color: blue; 
 }
 
-*,
-::before,
-::after {
-  box-sizing: border-box;
+/* :root = <html> */
+html {
+  --color: red;  
 }
 
-/* Сделает зеленым ВСЕ внутри product-info */
-
-.product-info > * { color: green; }
-
-blockquote[cite] {
-  background-color: #2E9AFF;
+.section {
+  padding: 20px;
+  margin: 10px;
+  background: #f0f0f0;
+  transition: all 0.3s ease;
 }
 
-article h3  {
-  font-weight: bold;
+/* Стиль применяется к элементу, 
+на который ведет якорная ссылка */
+.section:target {
+  background: #2E9AFF;
+  color: white;
+  border: 3px solid #1A6FCC;
+  transform: scale(1.02);
 }
-
-.star:hover ~ .star {
-  color: red;
-}
-
-label + input {
-  color: red;
-}
-
-article > h3 {
-  color: red
-}
-
