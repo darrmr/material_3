@@ -1,5 +1,3 @@
-
-
 .section {
   padding: 20px;
   margin: 10px;
@@ -14,4 +12,29 @@
   color: white;
   border: 3px solid #1A6FCC;
   transform: scale(1.02);
+}
+
+div.element#this {
+  color: green;
+  border: 10px solid red;
+}
+
+.color_red {
+  /* Определяем начальное значение */
+  color: red;
+}
+
+.color_red {
+  /* Переопределяем написанное ранее правило */
+  color: blue;
+}
+
+.wrapper {
+  background-color: #2E9AFF;
+  border: 10px solid #FFFFFF;
+}
+
+.inner {
+  background-color: #F498AD;
+  border: inherit;
 }

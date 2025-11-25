@@ -11,7 +11,7 @@
 <body>
 
 
-   
+
     <h1><a href="#"></a></h1>
     <h2><a href="#"></a></h2>
     <h3><a href="#"></a></h3>
@@ -32,11 +32,46 @@
         <p>Содержание раздела 2</p>
     </article>
 
-     <div class="actions">
+    <div class="actions">
         <button class="btn">Добавить в корзину</button>
         <button class="btn btn-primary">Купить сейчас</button>
         <button class="btn btn-danger">Удалить</button>
     </div>
+
+    <div class="element" id="this" style="color: purple; border: none">
+        Мини текст
+    </div>
+
+    <ul>
+        <li>Этот пункт имеет CSS-свойства по умолчанию</li>
+        <li>И этот тоже</li>
+        <li style="color: #2E9AFF">Текст в этом (и только в этом) теге будет синим</li>
+        <li>Снова обычное оформление</li>
+    </ul>
+
+
+    <p style="color: blue !important">
+        Цвет снова синий — !important инлайн-правила «перебивает»
+        даже !important в &lt;style&gt;.
+    </p>
+
+
+    <style>
+        .color_red {
+            /* Определяем начальное значение */
+            color: red;
+        }
+
+        .color_red {
+            /* Переопределяем написанное ранее правило */
+            color: blue;
+        }
+    </style>
+
+    <p class="color_red">Цвет текста — синий!</p>
+
+
+
 
 
 
